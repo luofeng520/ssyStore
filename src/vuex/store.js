@@ -3,15 +3,23 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
+const moduleA = {
+  state: {},
+  getters: {},
+  mutations: {},
+  actions: {}
+};
+
+const moduleB = {
+  state: {},
+  getters: {},
+  mutations: {},
+  actions: {}
+};
+
 const store = new Vuex.Store({
-    state: {
-      count: 0
-    },
-    mutations: {
-      increment (state) {
-        state.count++
-      }
-    }
-  })
-  
-export default store
+  modules: {
+      a: moduleA,
+      b: moduleB
+  }
+});
