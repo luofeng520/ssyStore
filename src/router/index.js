@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Login from '@/pages/login'
 Vue.use(Router)
 
 export default new Router({
@@ -8,7 +7,8 @@ export default new Router({
     {
       path: '/',
       name: 'Login',
-      component: Login
+      // 懒加载，减少压力
+      component: resolve => require(['@/pages/login'], resolve)
     }
   ]
 })
