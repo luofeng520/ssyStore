@@ -12,7 +12,7 @@
 </template>
 
 <script>
-//这是公共的头部，要传对象过来
+//这是公共的头部，父级要传对象过来
 export default {
   props: {
     headObj: {
