@@ -1,7 +1,7 @@
 <template>
     <div>
         <yd-cell-group>
-           <!--  <baseHeader :rightObj='rightObj'/> -->
+            <baseHeader :headObj='headObj'/>
             <yd-cell-item>
                 <span slot="left">用户名：</span>
                 <yd-input slot="right" required v-model="input1" max="20" placeholder="请输入用户名"></yd-input>
@@ -20,37 +20,36 @@
 </template>
 <script type="text/babel">
 // 登录
-    // import baseHeader from '@/components/header'
-    export default {
-        name: "Login",
-        data() {
-            return {
-                input1: '', 
-                input2: '',
-                rightObj:{
-                    show:true,
-                    rightTo:"/Rep",
-                    rightText:'注册'
-                }
-            }
-        },
-        // components:{
-        //     baseHeader
-        // }
+import baseHeader from '@/components/header'
+export default {
+  name: 'Login',
+  data () {
+    return {
+      input1: '',
+      input2: '',
+      headObj: {
+        show: true,
+        rightTo: '/reg',
+        rightText: '注册',
+        title: '登录'
+      }
     }
+  },
+  components: {
+    baseHeader
+  }
+}
 </script>
 
 <style scoped>
-    .forgetpa{
-        position:absolute;
-        text-align:center;
-        bottom:30px;
-        width:100%;
-
-    }
-    .ver{
-        text-align:right;
-        margin-right: 0.3em;
-    }
+.forgetpa {
+  position: absolute;
+  text-align: center;
+  bottom: 30px;
+  width: 100%;
+}
+.ver {
+  text-align: right;
+  margin-right: 0.3em;
+}
 </style>
-
