@@ -19,7 +19,8 @@ export default {
         type: Boolean
       },
       fontsize: {
-        type: String
+        type: String,
+        default:'0.3rem'
       },
       title: {
         type: String
