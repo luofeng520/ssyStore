@@ -1,13 +1,11 @@
 <template>
-    <div>
+    <div class="loginwrap">
+        <baseHeader :headObj='headObj'/>
         <yd-cell-group>
-            <baseHeader :headObj='headObj'/>
             <yd-cell-item>
-                <span slot="left">用户名：</span>
                 <yd-input slot="right" required v-model="input1" max="20" placeholder="请输入用户名"></yd-input>
             </yd-cell-item>
             <yd-cell-item>
-                <span slot="left">密码：</span>
                 <yd-input slot="right" type="password" v-model="input2" placeholder="请输入密码"></yd-input>
             </yd-cell-item>
        </yd-cell-group>
@@ -31,7 +29,8 @@ export default {
         show: true,
         rightTo: '/reg',
         rightText: '注册',
-        title: '登录'
+        title: '登录',
+        fontsize: '0.34rem'
       }
     }
   },
@@ -42,6 +41,9 @@ export default {
 </script>
 
 <style scoped>
+.loginwrap{
+    background: #fff;
+}
 .forgetpa {
   position: absolute;
   text-align: center;
