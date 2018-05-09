@@ -1,15 +1,20 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'Login',
+      // 懒加载，减少压力
+      component: resolve => require(['@/pages/login'], resolve)
+    },
+    {
+      path: '/reg',
+      name: 'Reg',
+      // 懒加载，减少压力
+      component: resolve => require(['@/pages/reg/reg1'], resolve)
     }
   ]
 })

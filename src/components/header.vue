@@ -5,7 +5,7 @@
                 <yd-navbar-back-icon></yd-navbar-back-icon>
             </router-link>
             <router-link :to='headObj.rightTo' slot="right" v-show='headObj.show'>
-                <span>{{headObj.righttext}}</span>
+                <span>{{headObj.rightText}}</span>
             </router-link>
         </yd-navbar>
     </div>
@@ -19,7 +19,8 @@ export default {
         type: Boolean
       },
       fontsize: {
-        type: String
+        type: String,
+        default:'0.3rem'
       },
       title: {
         type: String
@@ -27,7 +28,7 @@ export default {
       color: {
         type: String
       },
-      righttext: {
+      rightText: {
         type: String
       },
       rightTo: {
@@ -42,13 +43,14 @@ export default {
 <style>
 .baseHead {
   width: 100%;
-  height: 1.28rem;
+  height: 1rem;
+  margin-bottom: 10px;
 }
 .yd-navbar-item a span i::before {
-  font-size: 0.26rem;
+  font-size: 0.24rem;
 }
 .yd-navbar-item a {
-  font-size: 14px;
+  font-size: 0.14rem;
   color: #666;
   font-family: "PingFang-SC";
   font-weight: normal;
@@ -56,5 +58,8 @@ export default {
 .yd-navbar-center-title {
   font-weight: bold;
   font-family: "PingFang-SC";
+}
+.navbar-bottom-line-color:after {
+  box-shadow: 0px 0px 5px #1f1f20!important;
 }
 </style>
