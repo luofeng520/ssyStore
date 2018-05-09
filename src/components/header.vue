@@ -33,7 +33,7 @@ export default {
       },
       rightTo: {
         type: String,
-        default: '#'
+        default: ''
       }
     }
   }
