@@ -11,6 +11,7 @@ export default {
 </script>
 
 <style>
+@import url("./assets/styles/custom.css");
 #app {
   font-family: 'PingFang-SC', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -19,5 +20,13 @@ export default {
 }
 body{
   background: #fff
+}
+@font-face {
+  font-family: "iconfont";
+  src: url("./assets/fonts/iconfont.eot");
+  src: url("./assets/fonts/iconfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/iconfont.woff") format("woff"),
+    url("./assets/fonts/iconfont.ttf") format("truetype");
 }
 </style>

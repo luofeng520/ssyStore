@@ -1,0 +1,43 @@
+.checkNum>.yd-cell-left {
+  width: 100%;
+}
+.checkNum:after {
+  margin-left: 0.24rem;
+  content: "";
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #d9d9d9;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+.noneB>.yd-cell::after{
+  border-bottom:none
+}
+.butPad{
+  padding: 0 .54rem;
+}
+.inputS{
+  font-family: "PingFang-SC";
+  font-size: .28rem;
+}
+.nextBut{
+  background: linear-gradient(#A945FF, #7636FC);;
+  width: 100%;
+  height: 1rem;
+  margin:0 auto;
+  font-family: "PingFang-SC";
+  font-size: 0.36rem;
+  margin-top: 1.9rem;
+}
+.tips{
+  font-family: "PingFang-SC";
+  font-size: 0.2rem;
+  padding-left: .24rem;
+  color:#B4B4B4;
+  text-indent: 7px;
+}

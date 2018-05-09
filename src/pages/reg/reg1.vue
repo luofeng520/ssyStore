@@ -1,17 +1,16 @@
 <template>
     <div class="regwrap">
         <baseHeader :headObj='headObj'/>
-        <yd-cell-group>
-            <yd-cell-item>
-                <yd-input slot="left" required  v-model="input1" :show-success-icon="false" :show-error-icon="false" regex="mobile"  placeholder="请输入手机号"></yd-input>
-                <span slot="right"></span>
+        <yd-cell-group class="noneB">
+            <yd-cell-item class="checkNum">
+                <yd-input slot="left" required class="inputS"  v-model="input1" :show-success-icon="false" :show-error-icon="false" regex="mobile"  placeholder="请输入手机号"></yd-input>
             </yd-cell-item>
-            <yd-cell-item>
-                <yd-input slot="left" required  v-model="input2" :show-success-icon="false" :show-error-icon="false" placeholder="请输入验证码"></yd-input>
+            <yd-cell-item class="checkNum">
+                <yd-input slot="left" required class="inputS" v-model="input2" :show-success-icon="false" :show-error-icon="false" placeholder="请输入验证码"></yd-input>
                 <yd-button slot="right">获取验证码</yd-button>
             </yd-cell-item>
         </yd-cell-group>
-        <yd-button-group>
+        <yd-button-group class="butPad">
             <yd-button size="large" type="primary" class="nextBut">下一步</yd-button>
         </yd-button-group>
         <p class="agreeTitle">
@@ -31,7 +30,7 @@ export default {
       input7: '',
       headObj: {
         show: false,
-        rightTo: '/reg',
+        rightTo: '',
         rightText: '',
         title: '注册',
         fontsize: '0.34rem'
@@ -43,17 +42,10 @@ export default {
   }
 }
 </script>
-
 <style scoped>
 .regwrap{
     font-family:  "PingFang-SC";
     background: #fff;
-}
-.yd-cell-left {
-  width: 100%;
-}
-.yd-cell:after{
-  border: none;
 }
 .yd-cell-item:after {
     margin-left: .24rem;
@@ -69,15 +61,7 @@ export default {
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0;
 }
-.nextBut{
-  background: linear-gradient(#A945FF, #7636FC);;
-  width: 6.7rem;
-  height: 1rem;
-  margin:0 auto;
-  font-family: "PingFang-SC";
-  font-size: 0.36rem;
-  margin-top: 1.9rem;
-}
+
 .agreeTitle{
   text-align: center;
   margin-top: 10px;

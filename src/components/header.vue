@@ -5,7 +5,7 @@
                 <yd-navbar-back-icon></yd-navbar-back-icon>
             </router-link>
             <router-link :to='headObj.rightTo' slot="right" v-show='headObj.show'>
-                <span>{{headObj.rightText}}</span>
+                <span class="rtext">{{headObj.rightText}}</span>
             </router-link>
         </yd-navbar>
     </div>
@@ -20,7 +20,7 @@ export default {
       },
       fontsize: {
         type: String,
-        default:'0.3rem'
+        default: '0.3rem'
       },
       title: {
         type: String
@@ -61,5 +61,8 @@ export default {
 }
 .navbar-bottom-line-color:after {
   box-shadow: 0px 0px 5px #1f1f20!important;
+}
+.rtext{
+  font-size: 0.26rem;
 }
 </style>
