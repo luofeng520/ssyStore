@@ -5,6 +5,12 @@
             <i class="closeFt icon">&#xe64d;</i>
         </router-link>
     </yd-navbar>
+    <div class="logo-img">
+        <img src="../../assets/images/logo.png">
+    </div>
+    <yd-button-group class="butPad">
+      <yd-button size="large" type="primary" class="nextBut">登录</yd-button>
+    </yd-button-group>
     <p class="stBot">
       <span class="le bttext">
         <i class="weixin icon">&#xe61a;</i>
@@ -59,5 +65,16 @@ export default {}
   font-size: 0.26rem;
   font-family: 'PingFang-SC';
   font-weight: normal;
+}
+.logo-img{
+  width: 100%;
+  text-align: center;
+  margin-top: 0.54rem;
+}
+.logo-img img{
+  width: 1.53rem;
+  height: 0.78rem;
+  margin-top: 0.2rem;
+    margin-left: 0.3rem;    
 }
 </style>

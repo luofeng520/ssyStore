@@ -6,7 +6,7 @@ export default new Router({
   mode: 'history',
   routes: [
     {
-      path: '/',
+      path: '/Login1',
       name: 'Login1',
       // 懒加载，减少压力
       component: resolve => require(['@/pages/login/login1'], resolve)
@@ -22,7 +22,7 @@ export default new Router({
       component: resolve => require(['@/pages/reg/reg1'], resolve)
     },
     {
-      path: '/start3',
+      path: '/',
       name: 'start3',
       component: resolve => require(['@/pages/start/start3'], resolve)
     },
