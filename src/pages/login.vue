@@ -52,6 +52,6 @@ export default {
 }
 .ver {
   text-align: right;
-  margin-right: 0.3em;
+  margin-right: 0.3rem;
 }
 </style>
