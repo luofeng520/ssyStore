@@ -1,18 +1,20 @@
 <template>
     <div class="loginwrap">
         <baseHeader :headObj='headObj'/>
-        <yd-cell-group>
-            <yd-cell-item>
-                <yd-input slot="right" required v-model="input1" max="20" placeholder="请输入用户名"></yd-input>
+        <yd-cell-group class="noneB">
+            <yd-cell-item class="checkNum">
+                <yd-input slot="left" required class="inputS" :show-success-icon="false" :show-error-icon="false"  v-model="input1" max="20" placeholder="请输入用户名"></yd-input>
             </yd-cell-item>
-            <yd-cell-item>
-                <yd-input slot="right" type="password" v-model="input2" placeholder="请输入密码"></yd-input>
+            <yd-cell-item class="checkNum">
+                <yd-input slot="left" required type="password" class="inputS" v-model="input2" :show-success-icon="false" :show-error-icon="false" placeholder="请输入验证码"></yd-input>
             </yd-cell-item>
        </yd-cell-group>
        <p class='ver'>
-           <router-link to="">验证码登录</router-link>
+           <router-link to="">使用短信验证码登录</router-link>
        </p>
-       <yd-button size="large" type="primary">登录</yd-button>
+        <yd-button-group class="butPad">
+            <yd-button size="large" type="primary" class="nextBut">登录</yd-button>
+        </yd-button-group>
        <p class="forgetpa">忘记密码</p>
     </div>
 </template>
@@ -27,7 +29,7 @@ export default {
       input2: '',
       headObj: {
         show: true,
-        rightTo: '/reg',
+        rightTo: '/reg1',
         rightText: '注册',
         title: '登录',
         fontsize: '0.34rem'
