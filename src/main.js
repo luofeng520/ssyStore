@@ -6,10 +6,11 @@ import router from './router'
 import YDUI from 'vue-ydui'/* 相当于import YDUI from 'vue-ydui/ydui.rem.js' */
 import 'vue-ydui/dist/ydui.rem.css'
 /* 使用px：import 'vue-ydui/dist/ydui.px.css'; */
+import VueAwesomeSwiper from 'vue-awesome-swiper'
 
-Vue.use(YDUI)
-
-Vue.config.productionTip = false
+Vue.use(YDUI);
+Vue.use(VueAwesomeSwiper);
+Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
 new Vue({

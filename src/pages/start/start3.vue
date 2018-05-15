@@ -26,7 +26,14 @@
 </template>
 
 <script>
-export default {}
+import { swiper, swiperSlide } from 'vue-awesome-swiper'
+
+export default {
+   components: {
+    swiper,
+    swiperSlide
+  }
+}
 </script>
 
 <style  scoped>
@@ -75,6 +82,6 @@ export default {}
   width: 1.53rem;
   height: 0.78rem;
   margin-top: 0.2rem;
-    margin-left: 0.3rem;    
+  margin-left: 0.3rem;
 }
 </style>
